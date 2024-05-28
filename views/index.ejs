@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+<% items.forEach(function(item) {%>
+   <div class="blog">
+   <h2><%= item.title  %></h2>
+   <h4>Written by : <%= item.author %> </h4>
+   <div class="content"><p><%= item.content  %></p></div>
+   <hr>
+</div>
+<% }) %>
+
+<%- include("partials/footer.ejs")  %>
