@@ -20,6 +20,7 @@ header {
     right: 0;
     left: 0;
     top: 0;
+    justify-content: space-between;
 }
 
 h2,h4,p {
@@ -72,4 +73,28 @@ h2{
 
   .content p {
     word-wrap: break-word;
+  }
+
+  button{
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 2%;
+    background-color: darkslategray;
+    border: none;
+    color:hotpink;
+    cursor: pointer;
+    text-shadow: hotpink;
+    padding: 0;
+    font-size: 1.8rem;
+    
+  }
+
+  img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 100;
+    top: 17%;
+    right: 2%;
   }
