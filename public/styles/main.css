@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    
     flex-direction: column;
     display: flex;
 }
@@ -37,7 +37,7 @@ h2,h4,p {
 }
 
 footer{
-     position: absolute;
+     position: fixed;
      bottom: 0;
      background-color: darkslategray;
      display: block;
@@ -97,4 +97,58 @@ h2{
     z-index: 100;
     top: 17%;
     right: 2%;
+  }
+
+  label{
+    display: block;
+
+  }
+
+  input{
+    display:block;
+  }
+  .form { /* Create a class for your form */
+    background-color: lightgray;
+    padding: 20px; /* Add some padding for better readability */
+    margin: 10px auto;
+    margin-bottom: 10%; /* Center the form horizontally */
+    border-radius: 5px;
+     /* Add some rounded corners */
+  }
+  
+  .form label {
+    display: block; /* Ensure labels are displayed on separate lines */
+    margin-bottom: 5px; /* Add some space between labels and inputs */
+    font-weight: bold; /* Make labels stand out a bit */
+    font-family: "Montserrat", sans-serif; /* Use the same font as headings */
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea { /* Style all text input fields */
+    width: 100%; /* Make them fill the available space */
+    padding: 10px; /* Add some padding for better user experience */
+    border: 1px solid #ddd; /* Add a thin border */
+    font-family: "Montserrat", sans-serif;
+    border-radius: 2%; /* Use the same font as headings */
+  }
+  
+  .form textarea { /* Style textarea specifically */
+    height: 150px; /* Set a default height */
+  }
+  
+  .form button {
+    background-color: darkslategray;
+    border: none;
+    color: hotpink;
+    cursor: pointer;
+    text-shadow: #ff69b4;
+    padding: 10px 20px; /* Add some padding for the button */
+    font-size: 1.2rem; /* Adjust font size for a balanced look */
+    font-family: "Caveat Brush", cursive; /* Use the cursive font for buttons */
+    margin-top: 10px; /* Add some space after the last input */
+  }
+  
+  .form fieldset{
+    padding-right: 4%;
   }

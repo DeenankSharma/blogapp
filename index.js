@@ -12,6 +12,10 @@ app.get("/",(req,res)=>{
     res.render("index.ejs",{items : blogs});
 });
 
+app.get("/create",(req,res)=>{
+    res.render("create.ejs");
+})
+
 app.listen(3000,()=>{
     console.log("Listening on port 3000!");
 })

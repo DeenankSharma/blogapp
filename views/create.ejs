@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<form class="form" action="/home">
+    <h2>Create a new blog!</h2>
+    <fieldset>
+        <!-- <legend>Blog Details</legend> -->
+        <label for="title">Title</label>
+        <input type="text" name="title" placeholder="Enter the blog's title">
+        <label for="author">Author</label>
+        <input type="text" name="author" placeholder="Enter the author's name">
+        <label for="content">Content</label>
+        <textarea name="content" cols="30" rows="10" placeholder="Enter the blog's content..."></textarea>
+        <button value="submit" name="submit">Submit</button>
+    </fieldset>
+</form>
+<%- include("partials/footer.ejs")  %>
