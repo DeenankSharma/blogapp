@@ -1,8 +1,9 @@
 <%- include("partials/header.ejs") %>
-<form class="form delete-form" action="/updated_home" method="POST">  <h2>Which blog to delete?</h2>
+
+<form class="form edit-form" action="/edit_content" method="POST">  <h2>Which blog to update?</h2>
     <fieldset>
         <label for="title">Title</label>
-        <select name="title" class="delete-select"> <option value="" selected>Choose one</option>
+        <select name="title" class="edit-select"> <option value="" selected>Choose one</option>
             <% items.forEach(function(item) {%>
                 <option value="<%= item.title  %>">
                     <%= item.title %>
@@ -10,14 +11,15 @@
                 <% }); %>
         </select>
         <label for="author">Author</label>
-        <select name="author" class="delete-select"> <option value="" selected>Choose one</option>
+        <select name="author" class="edit-select"> <option value="" selected>Choose one</option>
             <% items.forEach(function(item) {%>
                 <option value="<%= item.author  %>">
                     <%= item.author %>
                 </option>
                 <% }); %>
         </select>
-        <button value="submit" name="submit" class="delete-button">Submit</button>  </fieldset>
+        <button value="submit" name="submit" class="edit-button">Submit</button>  </fieldset>
 </form>
 
 <%- include("partials/footer.ejs") %>
+
