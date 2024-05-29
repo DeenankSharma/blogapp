@@ -193,3 +193,23 @@ h2{
   font-family: "Caveat Brush", cursive; 
   margin-top: 10px; 
 }
+
+.edit-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  font-family: "Montserrat", sans-serif;
+  background-color: lightgray;
+  }
+  
+  .edit-button {
+  background-color: black;
+  border: none;
+  color: hotpink;
+  cursor: pointer;
+  text-shadow: hotpink;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Caveat Brush", cursive;
+  margin-top: 10px;
+  }
