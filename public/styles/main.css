@@ -2,6 +2,7 @@ body{
     
     flex-direction: column;
     display: flex;
+    margin-bottom: 10%;
 }
 h1 {
     font-family: "Caveat Brush", cursive;
@@ -11,7 +12,7 @@ h1 {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     display: flex;
     background-color: darkslategray;
     color: hotpink;
@@ -90,12 +91,29 @@ h2{
     
   }
 
-  img{
-    height: 50px;
-    width: 50px;
+  .edit{
+    height: 40px;
+    width: 40px;
     position: absolute;
     z-index: 100;
-    top: 17%;
+    top: 21%;
+    right: 10%;
+  }
+
+  .add{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 100;
+    top: 21%;
+    right: 18%;
+  }
+  .delete{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 100;
+    top: 21%;
     right: 2%;
   }
 
@@ -152,3 +170,26 @@ h2{
   .form fieldset{
     padding-right: 4%;
   }
+
+
+/* Style the select elements (dropdowns) */
+.delete-select {
+  width: 100%; /* Make them fill the available space */
+  padding: 10px; /* Add some padding for better user experience */
+  border: 1px solid white; /* Add a thin border */
+  font-family: "Montserrat", sans-serif; /* Use the same font as headings */
+  background-color: lightgray; /* Match the form background */
+}
+
+/* Style the submit button */
+.delete-button {
+  background-color: darkslategray;
+  border: none;
+  color: hotpink;
+  cursor: pointer;
+  text-shadow: hotpink;
+  padding: 10px 20px; /* Add some padding for the button */
+  font-size: 1.2rem; /* Adjust font size for a balanced look */
+  font-family: "Caveat Brush", cursive; /* Use the cursive font for buttons */
+  margin-top: 10px; /* Add some space after the last select */
+}
